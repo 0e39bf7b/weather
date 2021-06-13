@@ -1,0 +1,10 @@
+[Unit]
+Description=Hourly weather fetching
+Requires=weather.service
+
+[Timer]
+Unit=weather.service
+OnCalendar=hourly
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Weather fetcher
+Wants=weather.timer
+
+[Service]
+User=weather
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/share/weather/backend/weather.py
+WorkingDirectory=/usr/share/weather/backend
+
+[Install]
+WantedBy=multi-user.target

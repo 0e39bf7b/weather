@@ -1,0 +1,11 @@
+Package: weather
+Version: 0.1-2
+Section: misc
+Priority: optional
+Maintainer: 0e39bf7b <0e39bf7b@gmail.com>
+Homepage: https://0e39bf7b.blog/
+Architecture: all
+Installed-Size: SIZE
+Depends: python3-minimal (>= 3.7), python3-smbus (>= 4.1), nginx (>= 1.14)
+Description: RPi Weather station
+ Web application and python fetcher for temperature, pressure and humidity
